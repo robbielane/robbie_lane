@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticated?
+  before_action :authenticate!, only: [:index, :new, :create]
 
   def index
     @posts = Post.all
@@ -20,13 +20,17 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+    @post = Post.find(params[:id])
+  end
+
   private
 
   def post_params
     params.require(:post).permit(:title, :body)
   end
 
-  def authenticated?
+  def authenticate!
     redirect_to root_path unless current_user
   end
 end
