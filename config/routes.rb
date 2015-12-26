@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
   root to: 'welcome#index'
+  resources :posts
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  get '/logout', to: 'sessions#destroy'
+
+  namespace :api do
+    namespace :v1 do
+      resources :posts, only: [:show, :index]
+    end
+  end
 end
