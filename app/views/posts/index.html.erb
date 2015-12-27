@@ -1,6 +1,6 @@
 <div class="container">
   <% @posts.each do |post| %>
-    <div class="post clickable" data-link="<%= post_path(post) %>">
+    <div class="post clickable" data-link="<%= post_path(slug: post.slug) %>">
       <h4> <%= post.title %> </h4>
       <h6> <%= format_date post.created_at %> </h6>
       <p> <%= markdown format_post_body(post.body) %> </p>
