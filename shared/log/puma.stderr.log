@@ -1,0 +1,18 @@
+=== puma startup: 2015-12-27 12:50:36 -0700 ===
+WARN: Unresolved specs during Gem::Specification.reset:
+      minitest (~> 5.1)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+WARN: Unresolved specs during Gem::Specification.reset:
+      minitest (~> 5.1)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+WARN: Unresolved specs during Gem::Specification.reset:
+      minitest (~> 5.1)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+WARN: Unresolved specs during Gem::Specification.reset:
+      minitest (~> 5.1)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+=== puma startup: 2015-12-27 14:12:25 -0700 ===

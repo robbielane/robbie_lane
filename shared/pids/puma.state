@@ -1,0 +1,30 @@
+---
+pid: 3634
+config: !ruby/object:Puma::Configuration
+  cli_options: 
+  conf: 
+  options:
+    :min_threads: 1
+    :max_threads: 6
+    :quiet: false
+    :debug: false
+    :binds:
+    - unix:///home/robbie/code/robbie_lane/shared/sockets/puma.sock
+    :workers: 2
+    :daemon: false
+    :mode: :http
+    :before_fork: []
+    :worker_timeout: 60
+    :worker_boot_timeout: 60
+    :worker_shutdown_timeout: 30
+    :environment: production
+    :redirect_stdout: "/home/robbie/code/robbie_lane/shared/log/puma.stdout.log"
+    :redirect_stderr: "/home/robbie/code/robbie_lane/shared/log/puma.stderr.log"
+    :redirect_append: true
+    :pidfile: "/home/robbie/code/robbie_lane/shared/pids/puma.pid"
+    :state: "/home/robbie/code/robbie_lane/shared/pids/puma.state"
+    :control_url: unix:///tmp/puma-status-1451250745528-3634
+    :config_file: config/puma.rb
+    :control_url_temp: "/tmp/puma-status-1451250745528-3634"
+    :control_auth_token: 5d2dc6c422ce8a31c1cc419bef072e6
+    :tag: robbie_lane

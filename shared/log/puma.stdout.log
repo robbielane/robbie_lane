@@ -1,0 +1,278 @@
+=== puma startup: 2015-12-27 12:50:36 -0700 ===
+[4764] * Starting control server on unix:///tmp/puma-status-1451245836477-4764
+[4806] + Gemfile in context: /home/robbie/code/robbie_lane/Gemfile
+[4810] + Gemfile in context: /home/robbie/code/robbie_lane/Gemfile
+[4814] + Gemfile in context: /home/robbie/code/robbie_lane/Gemfile
+[4818] + Gemfile in context: /home/robbie/code/robbie_lane/Gemfile
+[4764] - Worker 2 (pid: 4814) booted, phase: 0
+[4764] - Worker 3 (pid: 4818) booted, phase: 0
+[4764] - Worker 1 (pid: 4810) booted, phase: 0
+[4764] - Worker 0 (pid: 4806) booted, phase: 0
+
+
+Started GET "/" for 66.249.73.211 at 2015-12-27 12:50:39 -0700
+Cannot render console from 66.249.73.211! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (1.3ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 6
+  Rendered welcome/_recent.html.erb (17.6ms)
+  Rendered welcome/index.html.erb within layouts/application (515.4ms)
+Completed 200 OK in 724ms (Views: 714.9ms | ActiveRecord: 7.5ms)
+[4818] 66.249.73.211 - - [27/Dec/2015:12:50:40 -0700] "GET / HTTP/1.0" 200 - 0.8049
+
+
+Started GET "/" for 184.60.22.243 at 2015-12-27 12:50:43 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" LIMIT 6
+  Rendered welcome/_recent.html.erb (8.8ms)
+  Rendered welcome/index.html.erb within layouts/application (249.0ms)
+Completed 200 OK in 382ms (Views: 377.8ms | ActiveRecord: 2.9ms)
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:43 -0700] "GET / HTTP/1.0" 200 - 0.4438
+
+
+Started GET "/assets/crevasse.self-dd03ac01c6606d125d5b16b398edcbaf69bac0a0cdb827f4b640459b00e445a7.css?body=1" for 184.60.22.243 at 2015-12-27 12:50:43 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/icons.self-f1cf1b683a234c5c0296cac431c4852190f1f8a28f2625fdb54fa930fedd8d07.css?body=1" for 184.60.22.243 at 2015-12-27 12:50:43 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:43 -0700] "GET /icons.self-f1cf1b683a234c5c0296cac431c4852190f1f8a28f2625fdb54fa930fedd8d07.css?body=1 HTTP/1.0" 200 267 0.0040
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/solarized-light.self-c9c8abd8027da4486b48421afb5690b4d5d8fd8af9b63b65948ab2261cbcf060.css?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /solarized-light.self-c9c8abd8027da4486b48421afb5690b4d5d8fd8af9b63b65948ab2261cbcf060.css?body=1 HTTP/1.0" 200 1484 0.0037
+
+
+Started GET "/assets/application.self-ee9db308a86aad8c9fccf440ddae30ff214b39f543bec055b3f2a0b29e8e0508.css?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1 HTTP/1.0" 200 284395 0.0061
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /application.self-ee9db308a86aad8c9fccf440ddae30ff214b39f543bec055b3f2a0b29e8e0508.css?body=1 HTTP/1.0" 200 535674 0.0150
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1 HTTP/1.0" 200 8065 0.0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1 HTTP/1.0" 200 19542 0.0109
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1 HTTP/1.0" 200 217 0.0038
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1 HTTP/1.0" 200 34858 0.0036
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1 HTTP/1.0" 200 18138 0.0039
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+[4814] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /crevasse.self-dd03ac01c6606d125d5b16b398edcbaf69bac0a0cdb827f4b640459b00e445a7.css?body=1 HTTP/1.0" 200 9442 0.2320
+
+
+Started GET "/assets/materialize/global.self-eb25948cf449c0357c9f7346c902ed69df1c1475db3d994dea8c4e8675b2fa84.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4814] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/global.self-eb25948cf449c0357c9f7346c902ed69df1c1475db3d994dea8c4e8675b2fa84.js?body=1 HTTP/1.0" 200 819 0.0053
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1 HTTP/1.0" 200 4466 0.0036
+
+
+Started GET "/assets/materialize/dropdown.self-bd72ffccb6355bb5fecf12f9f02f0bec16b90157ddf7da309cbeb99708cd5766.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/dropdown.self-bd72ffccb6355bb5fecf12f9f02f0bec16b90157ddf7da309cbeb99708cd5766.js?body=1 HTTP/1.0" 200 6250 0.0039
+
+
+Started GET "/assets/materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4814] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/leanModal.self-4db1374f875e0a1a2ba3389d23cae8f6f0c2672e7e69aeab7645ed51d26e6915.js?body=1 HTTP/1.0" 200 4894 0.0052
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1 HTTP/1.0" 200 7402 0.0037
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4814] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1 HTTP/1.0" 200 1877 0.0052
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1 HTTP/1.0" 200 988 0.1617
+
+
+Started GET "/assets/materialize/tabs.self-df7b2dd8c4454ce0ad9df4b04ee46194ef0c9bd20fc16b891cfad4858b5c0a67.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4810] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/tabs.self-df7b2dd8c4454ce0ad9df4b04ee46194ef0c9bd20fc16b891cfad4858b5c0a67.js?body=1 HTTP/1.0" 200 4225 0.0036
+
+
+Started GET "/assets/materialize/tooltip.self-f6b4b4e782dc3764dbcccdde180091624f1c76da505dddf346df7378cd7ec27a.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4814] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/tooltip.self-f6b4b4e782dc3764dbcccdde180091624f1c76da505dddf346df7378cd7ec27a.js?body=1 HTTP/1.0" 200 6343 0.0043
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1 HTTP/1.0" 200 11198 0.0038
+
+
+Started GET "/assets/materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/toasts.self-1eaa9f33c4c3b83f381997876ba6ac53899a5ca72a6b401708c32625fc553adc.js?body=1 HTTP/1.0" 200 4225 0.0044
+
+
+Started GET "/assets/materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/sideNav.self-d1aa0f50b6f5d0d9a7086344d806fc133274dd021e58f837cbe39e309012045b.js?body=1 HTTP/1.0" 200 11113 0.0037
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1 HTTP/1.0" 200 7951 0.0041
+
+
+Started GET "/assets/materialize/forms.self-4e7d96488ac87f85428cf8052c2316a64d593212f5ca4b4a5070de4d2fba0f19.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/forms.self-4e7d96488ac87f85428cf8052c2316a64d593212f5ca4b4a5070de4d2fba0f19.js?body=1 HTTP/1.0" 200 14911 0.0039
+
+
+Started GET "/assets/materialize/slider.self-b45587c52188bb778a060d2deee7c89f76474b48bc44559a0f8ca0b42a738b9b.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/slider.self-b45587c52188bb778a060d2deee7c89f76474b48bc44559a0f8ca0b42a738b9b.js?body=1 HTTP/1.0" 200 10650 0.0043
+
+
+Started GET "/assets/materialize/cards.self-cd862c2ab7d60b4af377eb17fd71533cdbb9ef21a1b2fad9366a3211cc4ece46.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/cards.self-cd862c2ab7d60b4af377eb17fd71533cdbb9ef21a1b2fad9366a3211cc4ece46.js?body=1 HTTP/1.0" 200 955 0.0039
+
+
+Started GET "/assets/materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/chips.self-9b19ca899ba360746581059852bf2a40b3338402eef9df9a7806efd8578056dd.js?body=1 HTTP/1.0" 200 185 0.0038
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1 HTTP/1.0" 200 1898 0.0042
+
+
+Started GET "/assets/materialize/buttons.self-e24986f138b11adc95249c0795e0357b52be8177ce2e894d41818868f51b09ed.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/buttons.self-e24986f138b11adc95249c0795e0357b52be8177ce2e894d41818868f51b09ed.js?body=1 HTTP/1.0" 200 1436 0.0039
+
+
+Started GET "/assets/materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/transitions.self-c527b205edfdd1f961487c4c7beaf83c335262accb4dff964341a86eb60fd2f2.js?body=1 HTTP/1.0" 200 4803 0.0037
+
+
+Started GET "/assets/materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/scrollFire.self-d38b34eac05d33baa79181ef5ba72c67b7f73714ff11cda22495d30f4469298f.js?body=1 HTTP/1.0" 200 1223 0.0038
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1 HTTP/1.0" 200 35872 0.0040
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4806] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1 HTTP/1.0" 200 50698 0.0042
+
+
+Started GET "/assets/materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize/character_counter.self-f3a78940ad5b851c1b7b79d86a5d5d9bdf0dc15e0e58e2a58b3eb57d845fbd37.js?body=1 HTTP/1.0" 200 1601 0.0039
+
+
+Started GET "/assets/materialize-sprockets.self-04d70fb8a9450566c66d9a39ec4abe92ea4871475b0e270b5b27736d815d5f79.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4814] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /materialize-sprockets.self-04d70fb8a9450566c66d9a39ec4abe92ea4871475b0e270b5b27736d815d5f79.js?body=1 HTTP/1.0" 200 31 0.0068
+
+
+Started GET "/assets/content.self-11f69c73232bae40475f2f1f259b03f23894a832722727c2d031379ec61af7dd.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /content.self-11f69c73232bae40475f2f1f259b03f23894a832722727c2d031379ec61af7dd.js?body=1 HTTP/1.0" 200 583 0.0037
+
+
+Started GET "/assets/crevasse.self-415bccaa9e07f50c3032ffcad7f687624bca2e9036e3bca9d640268efcc8a327.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /crevasse.self-415bccaa9e07f50c3032ffcad7f687624bca2e9036e3bca9d640268efcc8a327.js?body=1 HTTP/1.0" 200 10127 0.0035
+
+
+Started GET "/assets/jquery.caret.self-bc6bfef37fcedc5f25384be0eda183aab002ea337c948662a07d5fa59457cb67.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /jquery.caret.self-bc6bfef37fcedc5f25384be0eda183aab002ea337c948662a07d5fa59457cb67.js?body=1 HTTP/1.0" 200 3230 0.0033
+
+
+Started GET "/assets/jquery.scrollTo.min.self-ed738dc15733d7cf849b6ca165e8714b75079861d7c9a6b2f8c5a6406f8bda65.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /jquery.scrollTo.min.self-ed738dc15733d7cf849b6ca165e8714b75079861d7c9a6b2f8c5a6406f8bda65.js?body=1 HTTP/1.0" 200 2254 0.0034
+
+
+Started GET "/assets/marked.self-1ddcf836948e475379823cf1aee869f10c1590afaa687f3883418aae41c64607.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /marked.self-1ddcf836948e475379823cf1aee869f10c1590afaa687f3883418aae41c64607.js?body=1 HTTP/1.0" 200 15942 0.0036
+
+
+Started GET "/assets/posts.self-26a5f1c24d4428f71a7b4bf2ecd8b11301903cb3eefa963de177c36277db0ef5.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /posts.self-26a5f1c24d4428f71a7b4bf2ecd8b11301903cb3eefa963de177c36277db0ef5.js?body=1 HTTP/1.0" 200 420 0.0034
+
+
+Started GET "/assets/rainbow-custom.min.self-7d7c41428d106a14ce2630e0d7869e8dba21bd791d76468eadfc4f96f6ecf848.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /rainbow-custom.min.self-7d7c41428d106a14ce2630e0d7869e8dba21bd791d76468eadfc4f96f6ecf848.js?body=1 HTTP/1.0" 200 24895 0.0038
+
+
+Started GET "/assets/scripts.self-ed85ecc97ba5639f8e75707e6e28c3dded98972a5f63107affa2a1ad03cc8aa1.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /scripts.self-ed85ecc97ba5639f8e75707e6e28c3dded98972a5f63107affa2a1ad03cc8aa1.js?body=1 HTTP/1.0" 200 199 0.0038
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 184.60.22.243 at 2015-12-27 12:50:44 -0700
+Cannot render console from 184.60.22.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+[4818] 184.60.22.243 - - [27/Dec/2015:12:50:44 -0700] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.0" 200 581 0.0051
+[4764] - Gracefully shutting down workers...
+[4764] === puma shutdown: 2015-12-27 12:50:52 -0700 ===
+[4764] - Goodbye!
+=== puma startup: 2015-12-27 14:12:25 -0700 ===
+[3634] * Starting control server on unix:///tmp/puma-status-1451250745528-3634
+[3634] - Worker 0 (pid: 3736) booted, phase: 0
+[3634] - Worker 1 (pid: 3740) booted, phase: 0
+Started GET "/" for 184.60.22.243 at 2015-12-27 14:14:57 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (1.9ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 6[0m
+  Rendered welcome/_recent.html.erb (19.8ms)
+  Rendered welcome/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 38ms (Views: 26.1ms | ActiveRecord: 11.6ms)
+Started GET "/posts" for 184.60.22.243 at 2015-12-27 14:15:06 -0700
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+Started GET "/" for 184.60.22.243 at 2015-12-27 14:15:09 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT  "posts".* FROM "posts" LIMIT 6[0m
+  Rendered welcome/_recent.html.erb (2.3ms)
+  Rendered welcome/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.7ms)

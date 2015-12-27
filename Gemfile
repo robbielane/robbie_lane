@@ -13,6 +13,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'responders'
 gem 'redcarpet'
 gem 'coderay'
+gem 'rails_12factor'
+gem 'puma'
 
 group :development, :test do
   gem 'pry'
