@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate!, except: [:show]
+  before_action :authenticate!, except: [:show, :index]
 
   def index
     @posts = Post.all
@@ -37,6 +37,16 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to posts_dashboard_path
+  end
+
+  def dashboard
+    @posts = Post.all
   end
 
   private

@@ -11,10 +11,14 @@
         <div class="col s3"><%= link_to svg_tag('facebook.svg', class: 'icon'), 'http://facebook.com/robbielanephotography' %></div>
         <div class="col s3"><%= link_to svg_tag('500px.svg', class: 'icon'), 'http://500px.com/robbielane' %></div>
       </div>
+      <%= link_to "Visit Robbie Lane Photography", 'http://robbielane.net' %>
     </div>
 
     <div class="col s12 m8" id="recent-activity">
-      <h4 class="header-font">Recent Activity</h4>
+      <div class="head">
+        <%= link_to "Veiw all posts", posts_path, class: 'right' %>
+        <h4 class="header-font">Recent Activity</h4>
+      </div>
       <div class="posts">
         <%= render partial: 'recent', locals: {posts: @recent} %>
       </div>

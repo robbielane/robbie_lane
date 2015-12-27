@@ -44,6 +44,10 @@ body {
   margin-bottom: 25px;
 }
 
+.head {
+  border-bottom: 1px solid #ccc;
+}
+
 .clickable:hover {
   cursor: pointer;
   background: #ffebee;
@@ -79,5 +83,6 @@ input[type=text] {
 
 .social-icons {
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   margin-top: 25px;
 }
