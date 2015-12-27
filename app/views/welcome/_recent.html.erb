@@ -1,6 +1,6 @@
 <% posts.each do |post| %>
   <div class="post clickable" data-link="<%= post_path(post) %>">
     <h5> <%= post.title %> </h5>
-    <p> <%= markdown post.body[0..239] %> </p>
+    <p> <%= markdown format_post_body(post.body) %> </p>
   </div>
 <% end %>
