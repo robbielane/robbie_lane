@@ -6,4 +6,10 @@ $(document).ready(function() {
   $("#editor").crevasse({
     previewer: $("#preview")
   });
+
+  $(document).keyup(function(e) {
+     if (e.keyCode == 27) {
+        window.document.location = '/login';
+    }
+  });
 });
