@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate!, only: [:index, :new, :create]
+  before_action :authenticate!, except: [:show]
 
   def index
     @posts = Post.all
@@ -17,6 +17,21 @@ class PostsController < ApplicationController
     else
       flash.now[:error] = "Something went wrong :("
       render :new
+    end
+  end
+
+  def edit
+    @post = Post.find(params[:id])
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      flash[:notice] = "Succesfully updated #{@post.title}"
+      redirect_to posts_path
+    else
+      flash.now[:error] = "Something went wrong :("
+      render :edit
     end
   end
 
