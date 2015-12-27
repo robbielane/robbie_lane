@@ -1,4 +1,5 @@
 <div class="container">
+  <%= link_to svg_tag('left-arrow.svg', class: 'icon left-arrow'), root_path %>
   <% @posts.each do |post| %>
     <div class="post clickable" data-link="<%= post_path(slug: post.slug) %>">
       <h4> <%= post.title %> </h4>
