@@ -13,8 +13,8 @@
         <tr>
           <td> <%= post.title %> </td>
           <td> <%= format_date post.created_at %> </td>
-          <td> <%= link_to 'Edit', edit_post_path(post) %> </td>
-          <td> <%= link_to 'Delete', post_path(post), method: :delete %> </td>
+          <td> <%= link_to 'Edit', edit_post_path(slug: post.slug) %> </td>
+          <td> <%= link_to 'Delete', post_path(slug: post.slug), method: :delete %> </td>
         </tr>
       <% end %>
     </tbody>
