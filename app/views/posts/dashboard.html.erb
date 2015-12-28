@@ -20,7 +20,7 @@
     <tbody>
       <% @posts.each do |post| %>
         <tr class="<%= post.status %>">
-          <td> <%= post.title %> </td>
+          <td> <%= link_to post.title, post_path(slug: post.slug) %> </td>
           <td> <%= format_date post.created_at %> </td>
           <td> <%= link_to post.status, change_status(post), method: :patch %> </td>
           <td> <%= link_to 'Edit', edit_post_path(slug: post.slug) %> </td>

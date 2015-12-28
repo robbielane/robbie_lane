@@ -37,6 +37,9 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(slug: params[:slug])
+    if @post.status == 'pending' && !current_user
+      redirect_to root_path
+    end
   end
 
   def destroy
