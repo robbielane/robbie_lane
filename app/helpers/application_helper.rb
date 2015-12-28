@@ -29,4 +29,12 @@ module ApplicationHelper
   def format_date(date_time)
     date_time.strftime('%B %d, %Y')
   end
+
+  def change_status(post)
+    if post.status == 'pending'
+      post_path(slug: post.slug, post: {status: 'published'})
+    else
+      post_path(slug: post.slug, post: {status: 'pending'})
+    end
+  end
 end

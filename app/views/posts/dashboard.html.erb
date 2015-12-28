@@ -12,15 +12,17 @@
       <tr>
         <th>Title</th>
         <th>Date</th>
+        <th>Status</th>
         <th>Edit</th>
         <th>Delete</th>
       </tr>
     </thead>
     <tbody>
       <% @posts.each do |post| %>
-        <tr>
+        <tr class="<%= post.status %>">
           <td> <%= post.title %> </td>
           <td> <%= format_date post.created_at %> </td>
+          <td> <%= link_to post.status, change_status(post), method: :patch %> </td>
           <td> <%= link_to 'Edit', edit_post_path(slug: post.slug) %> </td>
           <td> <%= link_to 'Delete', post_path(slug: post.slug), method: :delete %> </td>
         </tr>

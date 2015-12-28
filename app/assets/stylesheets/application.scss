@@ -98,3 +98,45 @@ input[type=text], input[type=password] {
 .vcenter {
   margin: 30px;
 }
+
+.flash_error {
+  background: rgba(233,30,30,0);
+  color: rgba(255,0,0,0);
+  font-size: 1.4em;
+  position: absolute;;
+  width: 100%;
+  text-align: center;
+  animation: fadeout_error 2s linear;
+}
+
+
+@keyframes fadeout_error {
+  0% {background: rgba(233, 30, 30, 0.2);color: red;}
+  95% {background: rgba(233, 30, 30, 0.2);color: red;}
+  100% {background: rgba(233, 30, 30, 0);color: rgba(255,0,0,0);}
+}
+
+.flash_notice {
+  background: rgba(30,233,30,0);
+  color: rgba(0,255,0,0);
+  font-size: 1.4em;
+  position: absolute;;
+  width: 100%;
+  text-align: center;
+  animation: fadeout_notice 2s linear;
+}
+
+
+@keyframes fadeout_notice {
+  0% {background: rgba(30, 233, 30, 0.2);color: green;}
+  95% {background: rgba(30, 233, 30, 0.2);color: green;}
+  100% {background: rgba(30, 233, 30, 0);color: rgba(0,255,0,0);}
+}
+
+.pending {
+  background-color: #ffebee;
+}
+
+.published {
+  background-color: #e0f7fa;
+}
