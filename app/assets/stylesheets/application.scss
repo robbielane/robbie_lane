@@ -164,6 +164,7 @@ input[type=text], input[type=password] {
 
   .markdown {
     border: 3px solid #666;
+    overflow: scroll;
   }
 
   .previewer {
@@ -172,8 +173,8 @@ input[type=text], input[type=password] {
     border-bottom: 3px solid #666;
 
     #preview {
+      overflow: scroll;
       border: 1px solid #ccc;
-      margin-bottom: 7px;
     }
   }
 }
