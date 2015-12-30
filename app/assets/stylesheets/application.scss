@@ -145,3 +145,35 @@ input[type=text], input[type=password] {
 .published {
   background-color: #e0f7fa;
 }
+
+.post-form {
+  padding: 10px;
+
+  form {
+    label {
+        display: none;
+    }
+
+    input[type=text] {
+      margin: 5px 55px 0px 5px;
+      width: 98%;
+      font-size: 20px;
+      border: 3px solid #666;
+    }
+  }
+
+  .markdown {
+    border: 3px solid #666;
+  }
+
+  .previewer {
+    border-top: 3px solid #666;
+    border-right: 3px solid #666;
+    border-bottom: 3px solid #666;
+
+    #preview {
+      border: 1px solid #ccc;
+      margin-bottom: 7px;
+    }
+  }
+}
