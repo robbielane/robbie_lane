@@ -47,12 +47,13 @@ body {
 
 .photo {
  color: #fff;
- height:200px;
+ height:230px;
  margin: 5px;
  padding: 10px;
  border-bottom: 1px solid #ccc;
  background-size: cover;
  opacity: 0.7;
+ cursor: pointer;
 }
 
 .photo:hover {
