@@ -1,15 +1,18 @@
-// $(document).ready(function() {
-//   $.ajax({
-//     type: 'GET',
-//     url: '/api/v1/posts.json',
-//     success: function(posts) {
-//       $.each(posts, function(index, post) {
-//         $('.posts').append(
-//           "<div class='post clickable' data-id=" +
-//           post.id + "><h5>" + post.title + "</h5>" +
-//           "<p>" + post.body + "</p></div>"
-//         )
-//       })
-//     }
-//   });
-// });
+$(document).ready(function() {
+  $.ajax({
+    type: 'GET',
+    url: 'http://photography.robbielane.me/api/v1/recent.json',
+    success: function(posts) {
+      $.each(posts, function(index, post) {
+        $('.photos').append(
+          "<div id='photo_" + index + "' class='photo'" + "><h5>" + post.name + "</h5>" + "<p>" + post.description + "</p></div>"
+        )
+        $("#photo_" + index).css("background-image", "url(" + post.h_thumb_url + ")")
+        $("#photo_" + index).attr("data-link", "http://photography.robbielane.me" + post.picture_uri)
+        $('.photos').on('click', function() {
+          window.document.location = "http://photography.robbielane.me" + post.picture_uri
+        });
+      })
+    }
+  });
+});

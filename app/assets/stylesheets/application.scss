@@ -45,6 +45,21 @@ body {
  border-bottom: 1px solid #ccc;
 }
 
+.photo {
+ color: #fff;
+ height:230px;
+ margin: 5px;
+ padding: 10px;
+ border-bottom: 1px solid #ccc;
+ background-size: cover;
+ opacity: 0.7;
+ cursor: pointer;
+}
+
+.photo:hover {
+  opacity: 1;
+}
+
 .header-font {
   font-weight: 200;
   margin-bottom: 25px;
@@ -57,6 +72,7 @@ body {
 .clickable:hover {
   cursor: pointer;
   background: #ffebee;
+  background-size: cover;
 }
 
 .left-arrow {
