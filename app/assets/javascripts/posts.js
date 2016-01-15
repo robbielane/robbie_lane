@@ -3,6 +3,7 @@ $(document).ready(function() {
     type: 'GET',
     url: 'http://photography.robbielane.me/api/v1/recent.json',
     success: function(posts) {
+      console.table(posts)
       $.each(posts, function(index, post) {
         $('.posts').append(
           "<div id='photo_" + index + "' class='photo'" + "><h5>" + post.name + "</h5>" + "<p>" + post.description + "</p></div>"
