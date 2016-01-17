@@ -5,7 +5,7 @@ $(document).ready(function() {
     success: function(posts) {
       console.table(posts)
       $.each(posts, function(index, post) {
-        $('.posts').append(
+        $('.photos').append(
           "<div id='photo_" + index + "' class='photo'" + "><h5>" + post.name + "</h5>" + "<p>" + post.description + "</p></div>"
         )
         $("#photo_" + index ).css("background-image", "url(" + post.h_thumb_url + ")")
