@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $('.clickable').on('click', function() {
+$(document).ready( () => {
+  $('.clickable').on('click', () => {
     window.document.location = $(this).data('link');
   });
 
@@ -7,7 +7,7 @@ $(document).ready(function() {
     previewer: $("#preview")
   });
 
-  $(document).keyup(function(e) {
+  $(document).keyup( (e) => {
      if (e.keyCode == 27) {
         window.document.location = '/login';
     }
