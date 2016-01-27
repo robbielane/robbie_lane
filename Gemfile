@@ -14,6 +14,8 @@ gem 'responders'
 gem 'redcarpet'
 gem 'coderay'
 gem 'puma'
+gem 'sprockets', '>= 3.0.0'
+gem 'sprockets-es6'
 
 group :production do
   gem 'rails_12factor'
@@ -27,4 +29,3 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
