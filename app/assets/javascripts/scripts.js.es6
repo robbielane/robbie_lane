@@ -1,5 +1,5 @@
 $(document).ready( () => {
-  $('.clickable').on('click', () => {
+  $('.clickable').on('click', function() {
     window.document.location = $(this).data('link');
   });
 
