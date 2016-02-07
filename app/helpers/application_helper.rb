@@ -12,7 +12,7 @@ module ApplicationHelper
     #   fenced_code_blocks: true,
     #   disable_indented_code_blocks: true)
     # return markdown.render(text).html_safe
-    coderayified = CodeRayify.new(:filter_html => true, :hard_wrap => true)
+    coderayified = CodeRayify.new(:filter_html => false, :hard_wrap => true)
 
     options = {
       :fenced_code_blocks => true,
