@@ -10,7 +10,7 @@ class Api::V1::PostsController < Api::V1::BaseController
   end
 
   def create
-    
+    respond_with Post.create(title: params[:title], body: params[:body], status: 0)
   end
 
   private
